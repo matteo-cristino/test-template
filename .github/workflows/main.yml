@@ -19,5 +19,5 @@ jobs:
           which slangroom-exec
           slangroom-exec --version
           which slexfe
-          slexfe -h
+          slexfe -h || true
           make check
