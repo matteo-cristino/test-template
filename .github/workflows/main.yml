@@ -14,6 +14,10 @@ jobs:
       - uses: jdx/mise-action@v2
         with:
           install: true
-          cache: true
+          cache: false
       - run: |
+          which slangroom-exec
+          slangroom-exec --version
+          which slexfe
+          slexfe --version
           make check
